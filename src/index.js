@@ -7,7 +7,7 @@ import { HashRouter as Router,Route } from 'react-router-dom';
 import { About } from './about';
 
 ReactDOM.render(<Router>
-    <Route exact path='/' component={Portfolio}/> 
+    <Route exact path='/yagya2612/portfolio' component={Portfolio}/> 
     <Route exact path='/about' component={About}/> 
    
     

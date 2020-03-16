@@ -59,7 +59,7 @@ export const HeaderComponent = function HeaderComponent() {
 				{['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
 					<ListItem button key={text}  >
 						<ListItemIcon style={{ color: "white" }}>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-						<ListItemText primary={text} />
+						<ListItemText primary={text} style={{fontFamily:'yellowtail',fontSize:'40px'}}/>
 					</ListItem>
 				))}
 			</List>

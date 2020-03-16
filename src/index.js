@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Portfolio } from './portfolio';
 import { HashRouter as Router,Route } from 'react-router-dom';
 import { About } from './about';
 
 ReactDOM.render(<Router>
-    <Route exact path='/yagya2612/portfolio' component={Portfolio}/> 
-    <Route exact path='/yagya2612/About' component={About}/> 
+    <Route exact path='/' component={Portfolio}/> 
+    <Route exact path='/about' component={About}/> 
    
     
 

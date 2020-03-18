@@ -9,6 +9,8 @@ import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import image from './images/bgimage.jpeg';
+import image1 from './images/image.jpeg';
+
 const useStyles = makeStyles(theme => ({
     root: {
       display: 'flex',
@@ -21,9 +23,11 @@ const useStyles = makeStyles(theme => ({
     },
     content: {
       flex: '1 0 auto',
+      fontFamily:'Times New Roman'
     },
     cover: {
       width: 151,
+      height:'auto'
     },
    
     playIcon: {
@@ -43,19 +47,18 @@ export const AboutCard=function AboutCard(){
       <Card className={classes.root}>
         <div className={classes.details}>
           <CardContent className={classes.content}>
-            <Typography component="h5" variant="h5">
-              Yagya Prakash
+            <Typography component="h4" variant="h4" style={{fontFamily:'Times New Roman'}}>
+             Web Developer.  
             </Typography>
-            
+            <Typography component="p" variant="p" style={{fontFamily:'Times New Roman'}}>
+            Based in Mumbai. I Code & Design things for web.
+            </Typography>
+            <Typography component="p" variant="p" style={{fontFamily:'Times New Roman'}}>
+            Framework Agnostic: React js, Django, Angular...  
+            </Typography>
           </CardContent>
           
         </div>
-        <CardMedia
-          className={classes.cover}
-          image={image}
-          title="Live from space album cover"
-        
-        />
       </Card>
     );
 

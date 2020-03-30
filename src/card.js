@@ -1,66 +1,54 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
-import image from './images/bgimage.jpeg';
-import image1 from './images/image.jpeg';
+import { Header, Image, Icon, Button, Grid, Search, Divider, Segment } from 'semantic-ui-react';
+import './index.css';
+import image from './images/yagya.jpeg'
+import image1 from './images/image1.jpeg';
 
-const useStyles = makeStyles(theme => ({
-    root: {
-      display: 'flex',
-      background:`url(${image})`,
-    color:'white'
-    },
-    details: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-    content: {
-      flex: '1 0 auto',
-      fontFamily:'Times New Roman'
-    },
-    cover: {
-      width: 151,
-      height:'auto'
-    },
-   
-    playIcon: {
-      height: 38,
-      width: 38,
-    },
-  }));
-  
+export const AboutCard = function AboutCard() {
 
 
-export const AboutCard=function AboutCard(){
 
-    const classes = useStyles();
-    const theme = useTheme();
-  
-    return (
-      <Card className={classes.root}>
-        <div className={classes.details}>
-          <CardContent className={classes.content}>
-            <Typography component="h4" variant="h4" style={{fontFamily:'Times New Roman'}}>
-             Web Developer.  
-            </Typography>
-            <Typography component="p" variant="p" style={{fontFamily:'Times New Roman'}}>
-            Based in Mumbai. I Code & Design things for web.
-            </Typography>
-            <Typography component="p" variant="p" style={{fontFamily:'Times New Roman'}}>
-            Framework Agnostic: React js, Django, Angular...  
-            </Typography>
-          </CardContent>
-          
+  return (
+    <div className="ui container">
+      <div className="ui  grid">
+        <div className="ui  one column row wide">
+          <div className="ui  center aligned column">
+            <Header as='h2' icon textAlign='center'>
+
+
+            </Header>
+            <Segment className="segment" style={{ background: "#8E0E00", background: "-webkit-linear-gradient(to right, #1F1C18, #8E0E00)", background: "linear-gradient(to right, #1F1C18, #8E0E00)"}} color='red' raised placeholder stackable doubling >
+              <p style={{ color: 'white', fontSize: "28px", fontFamily: 'Times New Roman' }}>
+                <b>About</b>
+              </p>
+              <Image src={image} centered size='tiny' circular />
+              <Grid columns={1} stackable textAlign='center'>
+
+
+                <Grid.Row verticalAlign='middle'>
+                  <Grid.Column>
+
+                    {/* <h4 icon style={{ color: 'white', fontSize: "20px" }}>
+                      Hi I'M
+          </h4>
+                    <p style={{ color: 'white', fontSize: "28px", fontFamily: 'Times New Roman' }}>
+                      <b>Yagya</b>
+                    </p>
+                    <p style={{ color: 'white', fontSize: "20px", fontFamily: 'Times New Roman' }}>
+                      and I'm a <span style={{color:'red'}}><b>Web Development</b></span>
+        </p>
+
+                    <Button primary>know more</Button> */}
+                    <h1>Coming soon!!!</h1>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
+          </div>
         </div>
-      </Card>
-    );
+      </div>
+    </div>
+  );
 
 
 

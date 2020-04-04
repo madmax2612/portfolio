@@ -39,7 +39,7 @@ export const AboutCard = function AboutCard() {
         </p>
 
                     <Button primary>know more</Button> */}
-                    <h1>Coming soon!!!</h1>
+                    <h1>Coming soon!</h1>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
